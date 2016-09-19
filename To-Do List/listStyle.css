@@ -1,0 +1,84 @@
+/* General styling */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* Main task list styling */
+
+.deleteButton p {
+    float: right;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.deleteButton p:hover {
+    cursor: pointer;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    width: 91%;
+    margin: 1% auto;
+}
+
+#newItem {
+    margin-top: 1%;
+}
+
+#tasks {
+    display: inline;
+}
+
+#tasks li {
+    width: 96%;
+    margin: 4% auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.list-group-item {
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    box-shadow: 5px 5px 2px #888888;
+}
+
+
+/* Responsive design */
+
+@media (min-width: 768px) {
+    #newItem {
+        margin-top: 0;
+    }
+    p {
+        font-size: 20px;
+    }
+    .list-group-item {
+        box-shadow: 10px 10px 2px #888888;
+    }
+    #tasks li {
+        margin: 2% auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 60%;
+        margin: 0 auto;
+    }
+    html {
+        background: grey;
+    }
+}
